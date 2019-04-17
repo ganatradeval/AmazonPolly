@@ -10,6 +10,7 @@ Just follow steps and I will guide you to that.
 - text: Just write some paragraph of whatever length. 
 - Create one S3 bucket. (Give Amazon Polly permission to write in S3)([AWS Doc](https://docs.aws.amazon.com/polly/latest/dg/asynchronous-iam.html))
 - Select your favourite voice for given language as input. ([Voice List](https://docs.aws.amazon.com/polly/latest/dg/voicelist.html))
+- rename: Destination file name in S3 bucket.
 
 ## Steps to run
 1. Install boto3
@@ -36,3 +37,6 @@ region=us-east-1
 cd AmazonPolly
 python polly.py
 ```
+# What next!
+- Put this script in loop with number of your text files. and you will receive all files with desired name in S3 bucket.
+- Large file to convert? Just increase sleep time.
